@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Class Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Enter Class Details</h1>
+
+  <div class="from-container">
+    <label>Select Class Level:</label>
+    <br>
+    <select id="class-level">
+        <option value="6th">6th Class</option>
+        <option value="7th">7th Class</option>
+        <option value="8th">8th Class</option>
+        <option value="9th">9th Class</option>
+        <option value="10th">10th Class</option>
+    </select>
+
+    <label>Section (e.g. A, B, C):</label>
+    <br>
+    <input type="text" id="section-name" placeholder="Section Name (e.g. A)" />
+
+    <label>Subjects for this Section:</label>
+    <br>
+    <input type="text" id="class-subjects" placeholder="Subjects (comma separated)" />
+    <br>
+
+    <button onclick="addClass()">Add Class Section</button>
+
+    <h2>Added Sections</h2>
+    <div id="class-display"></div>
+
+    <a href="timetable.html"><button onclick="if(validateClassesBeforeNext()) { window.location.href='classes.html'; }">Next</button></a>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

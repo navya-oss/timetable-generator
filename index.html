@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teacher Details</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Enter Teacher Details</h1>
+  <div class="from-container">
+    <label>Teacher Name:</label><br />
+    <input type="text" id="teacher-name" placeholder="e.g. Mr. Smith" /><br /><br />
+
+    <label>Subjects (comma separated):</label><br />
+    <input type="text" id="teacher-subjects" placeholder="e.g. Math, Physics" /><br /><br />
+  
+    <button onclick="addTeacher()">Add Teacher</button>
+
+    <h2>Class Duration</h2>
+    <label>Duration of One Class (in hours):</label><br />
+    <input type="number" id="class-duration" placeholder="e.g. 1" min="1" /><br /><br />
+
+    <button onclick="if(validateTeachersBeforeNext()) { window.location.href='classes.html'; }">Next</button>
+
+
+    <h2>Added Teachers</h2>
+    <div id="teacher-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
